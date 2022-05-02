@@ -41,13 +41,4 @@ class YepsuaFilamentThemesServiceProvider extends ServiceProvider
 
         Themes::register();
     }
-
-    /**
-     * @return void
-     */
-    public function register() {
-        App::bind(FilamentThemes::class,function() {
-            return new BindFilamentThemes();
-        });
-    }
 }
