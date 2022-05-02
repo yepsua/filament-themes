@@ -1,6 +1,7 @@
 {
     "name" : "yepsua/filament-themes",
     "description" : "Manage filament themes from the config files",
+    "license": "MIT",
     "authors": [
         {
             "name": "Omar Yepez",
