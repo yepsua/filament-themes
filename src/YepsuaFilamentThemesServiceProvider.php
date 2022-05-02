@@ -39,7 +39,7 @@ class YepsuaFilamentThemesServiceProvider extends ServiceProvider
             return;
         }
 
-        Themes::register();
+        FilamentThemes::register();
     }
 
     /**
