@@ -5,7 +5,7 @@ namespace Yepsua\Filament\Themes\Facades\Bind;
 use Closure;
 use Filament\Facades\Filament;
 
-class Themes {
+class FilamentThemes {
 
     /**
      * Register the theme using the Filament facade

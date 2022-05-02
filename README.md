@@ -134,12 +134,12 @@ colors `.css` files. If you need to use another function, for example `mix`, `gl
 2) Register the theme inside your AppServiceProvider
 
 ```php
-    use Yepsua\Filament\Themes\Facades\Themes;
+    use Yepsua\Filament\Themes\Facades\FilamentThemes;
 
     public function boot()
     {
         ...
-        Themes::register(function($path) {
+        FilamentThemes::register(function($path) {
             // Use here the function you need to replace
             return global_asset($path);
         });

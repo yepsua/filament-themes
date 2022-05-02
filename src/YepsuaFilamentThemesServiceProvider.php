@@ -5,8 +5,8 @@ namespace Yepsua\Filament\Themes;
 use Filament\Facades\Filament;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
-use Yepsua\Filament\Themes\Facades\Bind\Themes as BindThemes;
-use Yepsua\Filament\Themes\Facades\Themes;
+use Yepsua\Filament\Themes\Facades\Bind\FilamentThemes as BindFilamentThemes;
+use Yepsua\Filament\Themes\Facades\FilamentThemes;
 
 class YepsuaFilamentThemesServiceProvider extends ServiceProvider
 {
@@ -46,8 +46,8 @@ class YepsuaFilamentThemesServiceProvider extends ServiceProvider
      * @return void
      */
     public function register() {
-        App::bind(Themes::class,function() {
-            return new BindThemes();
+        App::bind(FilamentThemes::class,function() {
+            return new BindFilamentThemes();
         });
     }
 }

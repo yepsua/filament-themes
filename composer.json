@@ -39,10 +39,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "yepsua\\filament-themes\\src\\YepsuaFilamentThemesServiceProvider"
+                "Yepsua\\Filament\\Themes\\YepsuaFilamentThemesServiceProvider"
             ],
             "aliases": {
-                "FilamentLogger": "Yepsua\\Filament\\Themes\\Facades\\Themes"
+                "FilamentThemes": "Yepsua\\Filament\\Themes\\Facades\\FilamentThemes"
             }
         }
     },
