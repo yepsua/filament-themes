@@ -1,0 +1,50 @@
+{
+    "name" : "yepsua/filament-themes",
+    "description" : "Manage filament themes from the config files",
+    "authors": [
+        {
+            "name": "Omar Yepez",
+            "email": "oyepez003@gmail.com"
+        }
+    ],
+    "keywords" : [
+      "laravel",
+      "filament",
+      "themes"
+    ],
+    "homepage": "https://github.com/z3d0x/filament-logger",
+    "version": "0.1.0",
+    "require" : {
+        "php": "^8.0 | ^8.1",
+        "illuminate/contracts": "^8.0",
+        "filament/filament": "^2.0"
+    },
+    "require-dev" : {
+      "phpunit/phpunit" : "^5.7"
+    },
+    "autoload" : {
+      "psr-4" : {
+        "Yepsua\\Filament\\Themes\\" : "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Yepsua\\Filament\\Themes\\Test\\": "tests"
+      }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "yepsua\\filament-themes\\src\\YepsuaFilamentThemesServiceProvider"
+            ],
+            "aliases": {
+                "FilamentLogger": "Yepsua\\Filament\\Themes\\Facades\\Themes"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }
