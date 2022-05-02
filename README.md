@@ -81,6 +81,18 @@ module.exports = {
 }
 ```
 
+- Make sure you have in your app.css the next content: 
+
+```css
+@import './../../vendor/filament/forms/dist/module.esm.css';
+@import '~tippy.js/dist/tippy.css';
+@import '~tippy.js/themes/light.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+``` 
+
 - Execute Laravel mix
 
 ```bash
