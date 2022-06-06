@@ -161,7 +161,7 @@ colors `.css` files. If you need to use another function, for example `mix`, `gl
 
 ## Notice:
 
-Finally, as you can see, you don't need a package to got this functionality, You just need to configure tailwind using css variables and add a new styles defining the primary color variables, however just installing this plugin is pretty easy to manage the themes colors from a config file.
+Finally, as you can see, you don't need a package to get this functionality, You just need to configure tailwind using css variables and add a new styles defining the primary color variables, however just installing this plugin is pretty easy to manage the themes colors from a config file.
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
