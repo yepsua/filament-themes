@@ -4,6 +4,7 @@ namespace Yepsua\Filament\Themes\Facades\Bind;
 
 use Closure;
 use Filament\Facades\Filament;
+use Illuminate\Foundation\Vite;
 
 class FilamentThemes {
 
