@@ -201,7 +201,7 @@ Now, you should see the app using the color defined in your config file. You can
 
 ---
 
-`Notice:` The theme manager uses the [Mix](https://laravel.com/docs/helpers) or [Vite](https://laravel.com/docs/vite) to import the css resources. If you need to use another function, for example [`asset`](https://laravel.com/docs/helpers), `global_asset` ([laravelteanancy](https://tenancyforlaravel.com/)) or any other closure, you can do it by the next way:
+`Notice:` The theme manager uses the [Mix](https://laravel.com/docs/mix) or [Vite](https://laravel.com/docs/vite) to import the css resources. If you need to use another function, for example [`asset`](https://laravel.com/docs/helpers), `global_asset` ([laravelteanancy](https://tenancyforlaravel.com/)) or any other closure, you can do it by the next way:
 
 1) Disable the auto_register in the config file `filament-themes.php`: 
 
