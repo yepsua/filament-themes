@@ -4,7 +4,6 @@ namespace Yepsua\Filament\Themes\Facades\Bind;
 
 use Closure;
 use Filament\Facades\Filament;
-use Illuminate\Foundation\Vite;
 
 class FilamentThemes {
 
@@ -17,7 +16,7 @@ class FilamentThemes {
     public function register(Closure $closure = null) : void {
         Filament::serving(function () use ($closure) {
             $assetColorPath = config('filament-themes.color_public_path', 'vendor/yepsua-filament-themes/css/amber.css');
-            Filament::registerStyles([$this->generateAsset($assetColorPath, $closure)]);
+            Filament::registerStyles([asset($assetColorPath)]);
             Filament::registerTheme($this->generateAsset(config('filament-themes.theme_public_path', 'css/app.css'), $closure));
         });
     }
@@ -32,10 +31,10 @@ class FilamentThemes {
     protected function generateAsset(string $path, Closure $closure = null) : string {
         if(!$closure) {
             if(config('filament-themes.enable_vite', false)) {
-                return app(Vite::class)(config('filament-themes.theme_public_path', 'css/app.css'));
-            } else {
-                return asset($path);
+                return app(\Illuminate\Foundation\Vite::class)(resource_path($path));
             }
+
+            return app(\Illuminate\Foundation\Mix::class)($path);
         }
 
         return $closure($path);

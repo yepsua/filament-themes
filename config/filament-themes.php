@@ -12,13 +12,13 @@ return [
     /**
      * If you are using vite instead of mix, you can set 'enable_vite'
      * to true. The 'theme_public_path' will be rendered using vite()
-     * instead of assets()
+     * instead of mix()
      */
     'enable_vite' => false,
 
     /**
      * You need to change this value if in the webpack the
-     * tailwind resources is different to: `public/css/app.css`
+     * tailwind resources is different to: `css/app.css`.
      */
     'theme_public_path' => 'css/app.css',
 
