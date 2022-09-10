@@ -92,6 +92,7 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ``` 
+- if you use Vite, set 'enable_vite' in the config file (`config/filament-themes.php`) to true
 
 - Execute Laravel mix
 

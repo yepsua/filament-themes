@@ -4,6 +4,7 @@ namespace Yepsua\Filament\Themes\Facades\Bind;
 
 use Closure;
 use Filament\Facades\Filament;
+use Illuminate\Foundation\Vite;
 
 class FilamentThemes {
 
@@ -30,8 +31,11 @@ class FilamentThemes {
      */
     protected function generateAsset(string $path, Closure $closure = null) : string {
         if(!$closure) {
-
-            return asset($path);
+            if(config('filament-themes.enable_vite', false)) {
+                return app(Vite::class)(config('filament-themes.theme_public_path', 'css/app.css'));
+            } else {
+                return asset($path);
+            }
         }
 
         return $closure($path);
