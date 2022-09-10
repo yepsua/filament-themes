@@ -31,7 +31,7 @@ class FilamentThemes {
     protected function generateAsset(string $path, Closure $closure = null) : string {
         if(!$closure) {
             if(config('filament-themes.enable_vite', false)) {
-                return app(\Illuminate\Foundation\Vite::class)(resource_path($path));
+                return app(\Illuminate\Foundation\Vite::class)('resources/' . $path);
             }
 
             return app(\Illuminate\Foundation\Mix::class)($path);
