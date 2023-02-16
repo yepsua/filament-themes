@@ -16,7 +16,7 @@
     "homepage": "https://github.com/z3d0x/filament-logger",
     "require" : {
         "php": "^8.0 | ^8.1",
-        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/contracts": "^8.0|^9.0|^10.0",
         "filament/filament": "^2.0"
     },
     "require-dev" : {
